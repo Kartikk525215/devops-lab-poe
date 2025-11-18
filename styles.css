@@ -1,0 +1,46 @@
+:root{
+  --bg: #fafafa;
+  --card: #ffffff;
+  --muted: #666;
+  --accent: #2b6cb0;
+  --maxw: 900px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#111;
+  line-height:1.6;
+}
+.site-header{
+  background:linear-gradient(90deg, #2b6cb0, #2c7be5);
+  color:white;
+  padding:2rem 1rem;
+  text-align:center;
+}
+.container{
+  max-width:var(--maxw);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.post{
+  background:var(--card);
+  border-radius:10px;
+  padding:1.2rem;
+  margin-bottom:1rem;
+  box-shadow: 0 6px 18px rgba(20,20,30,0.06);
+}
+.post h2{ margin:0 0 .25rem; }
+.meta{ color:var(--muted); font-size:.9rem; margin-bottom:.6rem;}
+.tagline{ margin:0.2rem 0 0; opacity:0.95;}
+.site-footer{
+  text-align:center;
+  padding:1.2rem;
+  color:var(--muted);
+  font-size:.9rem;
+}
+@media (max-width:600px){
+  .site-header{ padding:1.2rem; }
+  .container{ margin:1rem; }
+}
